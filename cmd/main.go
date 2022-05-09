@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"fmt"
 	"os"
-	"x509o"
+	"github.com/mzky/x509o"
 )
 
 var rootCer = `MIIFdTCCA12gAwIBAgIKEAAAAAAAAAAAADANBgkqhkiG9w0BAQsFADBmMQswCQYD
