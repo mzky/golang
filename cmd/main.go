@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/base64"
 	"fmt"
+	"github.com/mzky/x509o"
 	"os"
-	"x509o"
 )
 
 var rootCer = `MIIFdTCCA12gAwIBAgIKEAAAAAAAAAAAADANBgkqhkiG9w0BAQsFADBmMQswCQYD
