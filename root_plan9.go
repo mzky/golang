@@ -5,7 +5,7 @@
 //go:build plan9
 // +build plan9
 
-package x509o
+package x509
 
 import (
 	"os"

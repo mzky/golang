@@ -5,7 +5,7 @@
 //go:build js && wasm
 // +build js,wasm
 
-package x509o
+package x509
 
 // Possible certificate files; stop after finding one.
 var certFiles = []string{}

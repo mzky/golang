@@ -1,4 +1,4 @@
-module github.com/mzky/x509o
+module github.com/mzky/x509
 
 go 1.17
 

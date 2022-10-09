@@ -5,7 +5,7 @@
 //go:build aix || dragonfly || freebsd || (js && wasm) || linux || netbsd || openbsd || solaris
 // +build aix dragonfly freebsd js,wasm linux netbsd openbsd solaris
 
-package x509o
+package x509
 
 import (
 	"io/fs"

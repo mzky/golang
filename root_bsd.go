@@ -5,7 +5,7 @@
 //go:build dragonfly || freebsd || netbsd || openbsd
 // +build dragonfly freebsd netbsd openbsd
 
-package x509o
+package x509
 
 // Possible certificate files; stop after finding one.
 var certFiles = []string{

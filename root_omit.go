@@ -2,19 +2,19 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-//go:build ((darwin && arm64) || (darwin && amd64 && ios)) && x509omitbundledroots
+//go:build ((darwin && arm64) || (darwin && amd64 && ios)) && x509mitbundledroots
 // +build darwin,arm64 darwin,amd64,ios
-// +build x509omitbundledroots
+// +build x509mitbundledroots
 
 // This file provides the loadSystemRoots func when the
-// "x509omitbundledroots" build tag has disabled bundling a copy,
+// "x509mitbundledroots" build tag has disabled bundling a copy,
 // which currently on happens on darwin/arm64 (root_darwin_arm64.go).
 // This then saves 256 KiB of binary size and another 560 KiB of
 // runtime memory size retaining the parsed roots forever. Constrained
 // environments can construct minimal x509 root CertPools on the fly
 // in the crypto/tls.Config.VerifyPeerCertificate hook.
 
-package x509o
+package x509
 
 import "errors"
 

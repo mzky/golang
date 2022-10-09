@@ -5,7 +5,7 @@
 //go:build !ios
 // +build !ios
 
-package x509o
+package x509
 
 import (
 	"bytes"

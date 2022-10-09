@@ -1,4 +1,4 @@
-package x509o
+package x509
 
 import (
 	"bytes"

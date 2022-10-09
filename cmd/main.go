@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/mzky/x509o"
+	"github.com/mzky/x509"
 	"os"
 )
 
@@ -83,13 +83,13 @@ func main() {
 
 }
 
-func xPems(c string) (*x509o.Certificate, error) {
+func xPems(c string) (*x509.Certificate, error) {
 	pbCert, err := base64.RawStdEncoding.DecodeString(c)
 	if err != nil {
 		return nil, err
 	}
 
-	xCert, err := x509o.ParseCertificate(pbCert)
+	xCert, err := x509.ParseCertificate(pbCert)
 	if err != nil {
 		return xCert, err
 	}
